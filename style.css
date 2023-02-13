@@ -101,7 +101,6 @@ right: 0;
     right: 68px;
 }
 /* ///////////////////////////////////////////////////////////////////// */
-
 h6{
     font-family: 'Open Sans';
     font-weight: 400;
@@ -114,7 +113,6 @@ h6{
 .grey-block{
     background: #EBEBEB;
 }
-
 .info-section__container{
     display: flex;
     justify-content: space-between;
@@ -134,7 +132,6 @@ line-height: 53px;
 text-transform: capitalize;
 margin-bottom: 25px;
 }
-
 .info-section__left p{
 font-family: 'Open Sans';
 font-weight: 400;
@@ -155,8 +152,6 @@ font-size: 26px;
 line-height: 26px;
 text-transform: capitalize;
 }
-
-
 .numsales{
     padding: 50px 0px;
     }
@@ -169,7 +164,6 @@ text-transform: capitalize;
     .number{
         text-align: center;
     }
-    
     .numbers .number h3{
         font-family: 'Teko';
     font-weight: 700;
@@ -177,7 +171,6 @@ text-transform: capitalize;
     line-height: 59px;
     color: #141414;
     }
-    
     .homeview{
         margin-top: 40px;
         display: flex;
@@ -187,25 +180,16 @@ text-transform: capitalize;
     .homeview-content{
         margin: 5px;
     }
-
-
-
-
-
-
     .flex-services-block{
         display: flex;
         flex-wrap: wrap;
         justify-content: space-around;
         margin: 50px 0px;
     }
-    
     .inside-services-block{
         display: flex;
         align-items: center;
     }
-    
-    
     .inside-services-block h5{
         font-family: 'Teko';
     font-weight: 400;
@@ -256,7 +240,6 @@ text-transform: capitalize;
    margin-top: 30px;
    
     }
-
     footer{
         position: relative;
         width: 100%;
@@ -266,6 +249,7 @@ text-transform: capitalize;
     .footer-container{
         position: relative;
         display: flex;
+        flex-wrap: wrap;
         justify-content: space-between;
         padding: 200px 0px 30px 0px;
         font-family: 'Open Sans';
@@ -276,16 +260,13 @@ text-transform: capitalize;
     text-transform: uppercase;
     color: #FFFFFF;
     }
-    
     .footer-container ul{
         display: flex;
         list-style: none;
     }
-    
     .footer-container ul li{
         margin-right: 30px;
     }
-    
     .footer-form{
         background: #99823D;
         width: 90%;
@@ -312,9 +293,7 @@ text-transform: capitalize;
     padding:9px 80px ;
     border: none;
     }
-    
     .footer-form button{
-        width: 13%;
         height: 68px;
     border: none;
     font-family: 'Open Sans';
@@ -327,35 +306,36 @@ text-transform: capitalize;
     color: #FFFFFF;
     background: #141414;
     margin-left: 10px;
+    padding: 0px 5px;
     }
-    
     .antage-block{
-        width: 100%;
+        width: 1300px;
         position: absolute;
         top: -150px;
         z-index: -1;
     }
-    
-    
-
-
-
-
-
-
+@media screen and (max-width:1340px){
+    .antage-block{
+        display: none;
+    }
+    footer{
+        margin-top: 40px;
+    }
+}
     @media screen and (max-width:1300px){
         .homeview{
             justify-content: center;
         }
-       
     }
-
 @media screen and (max-width:1060px){
     nav ul li{
         margin: 0px 10px;
     }
     .homeview-content{
         width: 60%;
+    }
+    footer{
+        margin-top: 10px;
     }
 }
 @media screen and (max-width:900px) {
@@ -388,16 +368,26 @@ text-transform: capitalize;
     }
 }
 @media screen and (max-width:700px){
+    .homeview-content{
+        width: 90%;
+    }
+    .footer-form input{
+        padding: 6px 40px;
+        font-size: 8px;
+    }
+    .footer-form button{
+        padding: 6px 10px;
+        font-size: 8px;
+    }
+}
+
+@media screen and (max-width:769px){
     .numbers{
         flex-direction: column;
     }
     .number{
         margin-bottom: 20px;
     }
-    .homeview-content{
-        width: 90%;
-    }
-
 }
 
 
@@ -416,7 +406,6 @@ text-transform: capitalize;
             height: 50px;
         }
 }
-
 @media screen and (max-width:407px) {
     nav ul li{
         margin: 10px 10px;
