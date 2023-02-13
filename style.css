@@ -330,7 +330,7 @@ text-transform: capitalize;
     }
     
     .antage-block{
-        width: 90%;
+        width: 100%;
         position: absolute;
         top: -150px;
         z-index: -1;
